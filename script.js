@@ -1,7 +1,7 @@
 
 //lab
 /*
-
+ 
 Exercise 1: maxOfTwoNumbers()
 
 In this exercise, create a function named maxOfTwoNumbers. 
