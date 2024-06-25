@@ -26,6 +26,11 @@ const maxOfTwoNumbers = (x, y) => {
 
 
 
+
+
+
+
+
 /*
 Exercise 2: isAdult()
 
@@ -45,6 +50,11 @@ const isAdult=(age )=>{
 
 
 console.log('Exercise 2 Result:', isAdult(21));
+
+
+
+
+
 
 
 
@@ -78,6 +88,11 @@ console.log('Exercise 3 Result:', isCharAVowel("a"));
 
 
 
+
+
+
+
+
 /*
 Exercise 4: generateEmail()
 
@@ -101,6 +116,11 @@ console.log('Exercise 4 Result:', generateEmail("johnsmith", "example.com"));
 
 
 
+
+
+
+
+
 /*
 Exercise 5: greetUser()
 
@@ -120,6 +140,11 @@ const greetUser=(name ,time )=>{
 
 
 console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
+
+
+
+
+
 
 
 
@@ -149,6 +174,11 @@ const maxOfThree =(n1,n2,n3)=>{
 
 console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
 
+
+
+
+
+
 /*
 Exercise 7: calculateTip()
 
@@ -167,6 +197,11 @@ const calculateTip=(billAmount , tippercentage)=>{
 
 
 console.log('Exercise 7 Result:', calculateTip(50, 20));
+
+
+
+
+
 
 
 
@@ -204,6 +239,11 @@ console.log('Exercise 8 Result:', convertTemperature(32, "C"));
 
 
 
+
+
+
+
+
 /*
 Exercise 9: basicCalculator()
 
@@ -221,17 +261,149 @@ Complete the exercise in the space below:
 */
 
 const basicCalculator=(a,b,c)=>{
-    if(c==='add')
-        a+b
-    if(c==='subtract')
-        a-b
-    if(c==='multiply')
-        a*b
-    if(c==='divide')
-        a/b
-}
+    if(c ==='add'){ return a+b}
+    else
+        
+    if(c ==='subtract'){ return a-b}
+    else
+       
+    if(c ==='multiply'){ return a*b}
+    else
+        
+    if(c ==='divide'){if(b !== 0 ) return a/b}
+    else
+    return " error "}
 
 console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
+
+
+
+
+
+
+
+
+
+
+
+/*
+Exercise 10: calculateGrade()
+
+Define a function called calculateGrade. 
+It should take a numerical score and return the corresponding letter 
+grade (A, B, C, D, F). 
+
+For example, 90 and above yields an 'A', 80-89 is a 'B', 
+and 70-79 is a 'C', 60-69 is a 'D' and anything lower than a 60 is an 'F'.
+
+Example: calculateGrade(100) should return A.
+
+Complete the exercise in the space below:
+*/
+
+const calculateGrade=(score)=> {
+    if (score >= 90) {
+        return 'A';
+    } else if (score >= 80) {
+        return 'B';
+    } else if (score >= 70) {
+        return 'C';
+    } else if (score >= 60) {
+        return 'D';
+    } else {
+        return 'F';
+    }
+}
+
+console.log('Exercise 10 Result:', calculateGrade(85)); // Exercise 10 Result: B
+
+
+
+
+
+
+
+
+
+/*
+Exercise 11: createUsername()
+
+Define a function called createUsername. 
+It should take a first name and a last name and return a username. 
+
+The username should be a combination of the following:
+- The first three letters of the first name.
+- The first three letters of the last name.
+- The total character count of the first and last name combined.
+
+Example: createUsername('Samantha', 'Green') should return 'SamGre12'.
+
+Complete the exercise in the space below:
+*/
+
+const createUsername=(firstName , lastName )=>{
+    const firstPart = firstName.length >= (3) ? firstName.substring(0, 3) : firstName;
+    const secondPart = lastName.length >= (3) ? lastName.substring(0, 3) : lastName;
+    
+      const totalLength = firstName.length + lastName.length;
+    //first 3 later of fiestname lastname && totle length for all   
+      const username = `${firstPart}${secondPart}${totalLength}`;
+      
+      return username;
+    
+}
+
+console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
+
+
+
+
+
+
+
+
+/*
+Exercise 12: numArgs()
+
+Challenge yourself with numArgs. 
+This function should return the count of arguments passed to it when called.
+
+Complete the exercise in the space below:
+*/
+function numArgs() {
+    // The arguments object contains 
+    //all the arguments passed to the function
+    return arguments.length;
+}
+
+console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4)); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
